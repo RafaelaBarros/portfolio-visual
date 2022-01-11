@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+// Estilização
 import './App.css';
 
+// Componentes de Navegacao
+import Header from './navegacao/Header';
+import Footer from './navegacao/Footer';
+
+// Ícones
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faBars } from '@fortawesome/free-solid-svg-icons' // Importar cada ícone
+
+library.add(faBars) // E chamar
+
+// React-App
+
+// TODO: Um evento no Header alterando uma variávei local/pai (que é parâmetro do './navegacao/Sidebar.js')
+// OU não passa por aqui
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <div className="Conteudo-pg">
+        <p>Teste de Conteúdo da Página </p>
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
