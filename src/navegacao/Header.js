@@ -8,12 +8,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import 'bootstrap/dist/css/bootstrap.min.css'; // SEM ELE NÃO APARECE
 import Button from 'react-bootstrap/Button';
 
+// Material/Fonte
 import logo from '../logo.svg';
 
 // TODO: Botão vai ter uma função @click que altera a visibilidade do 'Sidebar.js', ou seja
 // Ele vai exportar um valor para '../App.js'
 
-function Header() {
+export default function Header() {
   return (
       <header className="App-header">
         <div className="Logo">
@@ -28,5 +29,3 @@ function Header() {
       </header>
   );
 };
-
-export default Header;

@@ -11,10 +11,12 @@ import { faBars } from '@fortawesome/free-solid-svg-icons' // Importar cada íco
 
 library.add(faBars) // E chamar
 
-// React-App
-
 // TODO: Um evento no Header alterando uma variávei local/pai (que é parâmetro do './navegacao/Sidebar.js')
 // OU não passa por aqui
+
+// TODO: Rotas!!!
+
+// React-App
 function App() {
   return (
     <div className="App">

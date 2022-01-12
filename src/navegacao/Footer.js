@@ -1,6 +1,7 @@
+// Estilização
 import '../App.css';
 
-function Footer() {
+export default function Footer() {
     return (
     <footer className='App-footer'>
         <p> Rafaela e Erisvan
@@ -8,6 +9,4 @@ function Footer() {
         </p>
     </footer>
     );
-}
-
-export default Footer;
+};
